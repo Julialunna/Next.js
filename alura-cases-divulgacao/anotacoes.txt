@@ -1,0 +1,5 @@
+npx creat-next-app
+pode usar <a> com next.js
+para nao vir todos os documentos de novo ->
+<Link href="/faq">
+</Link>
