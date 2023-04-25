@@ -22,3 +22,7 @@ e depois chama ele
 -Arquivos estáticos na pasta public ficam visíveis para todos (caminho sem pasta public) (xml site map: tem todas as rotas)
 -getStaticProps, carrega instantaneamente com pré-carregamento -> site estático (mais barato)
 -getServerSideProps->roda toda vez que usuário acessa a página, não pode em estático isso, getstaticprops só no build, quando leva página para internet, 
+
+dangerousSetInnerHtml -> usa como html mesmo
+
+configurações=next.config.js

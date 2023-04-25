@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import Link from '../src/componentes/Link/';
 import Head from 'next/head';
+import FAQScreen from '../src/screens/FAQScreen';
+export default FAQScreen;
 //em modo dev sempre roda, em acesso não
 export async function getStaticProps(context){
 
@@ -17,12 +19,12 @@ export async function getStaticProps(context){
     };
 }
 
-export default function FAQPage({faq}){
+/*export default function FAQPage({faq}){
 
     /*const [faq, setFaq]=useState([])
     useEffect(()=>{
     
-    }, [])*/
+    }, [])
 
     return(
         <div>
@@ -48,4 +50,4 @@ export default function FAQPage({faq}){
             </ul>
         </div>
     )
-}
+}*/
