@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Link from '../src/componentes/Link/';
+import Head from 'next/head';
 //em modo dev sempre roda, em acesso não
 export async function getStaticProps(context){
 
@@ -25,6 +26,9 @@ export default function FAQPage({faq}){
 
     return(
         <div>
+             <Head>
+           <title>FAQ</title> 
+        </Head>
             <h1>Alura Cases - Páginas de Perguntas FAQ</h1>
             <Link href="/">
             Ir para a home
