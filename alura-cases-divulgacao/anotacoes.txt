@@ -1,6 +1,20 @@
-npx creat-next-app
-pode usar <a> com next.js
-para nao vir todos os documentos de novo ->
+-npx creat-next-app
+-pode usar <a> com next.js
+-para nao vir todos os documentos de novo ->
 <Link href="/faq">
 </Link>
-A forma stática é mais rápida, next gera eles
+-A forma stática é mais rápida, next gera eles
+-Estilos não globais-> 
+<style jsx>{
+            ``
+        }
+</style>
+-Estilos globais->
+cria elemento desse jeito:
+<style global jsx>{`
+`}
+</style> 
+e depois chama ele
+-Para usar ele em todas as páginas, usar middleware _App.js
+
+-Arquivos estáticos na pasta public ficam visíveis para todos (caminho sem pasta public) (xml site map: tem todas as rotas)
