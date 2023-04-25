@@ -1,0 +1,2 @@
+app-> aplica para todas as páginas -> _app.js em pages
+Document-> aplica em todos os documentos (head, html)-> _document.js
