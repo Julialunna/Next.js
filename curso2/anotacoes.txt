@@ -7,3 +7,6 @@ a!=Link-> Link não recarrega a página de novo -> single page application
 arquivo estático acessa por link "/images/foto.png"
 next export-> para subir projeto estático
 getstaticprops: pré-carrega página antes, usar com getstaticPath para projetos estaticos
+
+Incremental Static Generation->muitas páginas
+fallback->não existe ainda->rotas[], fallback blocking, carrega por demanda 

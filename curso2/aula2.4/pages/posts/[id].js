@@ -1,28 +1,32 @@
 import NextLink from 'next/link';
 import { Box, Text } from '@skynexui/components';
 import { useRouter } from 'next/router';
-import dados from'../../dados.json';
+
 
 export async function getStaticPaths(){
   /*const paths=[{params:{id:'1'}},]/*/
-  const paths=dados.posts.map((postAtual)=>{
+  /*const dadosDaAPI = await fetch('https://fakeapi-omariosouto.vercel.app/api/posts')
+  .then((res) => res.json());
+  const paths=dadosDaAPI.posts.map((postAtual)=>{
     return {params:{id:`${postAtual.id}`}}
-  })
+  })*/
   return{
-    paths:paths, 
-    fallback:false
+    paths:[], 
+    fallback:'blocking'
   }
 }
 
 export async function getStaticProps(context){
-  console.log(context.params.id);
   const id = context.params.id;
-  const post=dados.posts.find((currentPost)=>{
+  const dadosDaAPI = await fetch(`https://fakeapi-omariosouto.vercel.app/api/posts/${id}`)
+  .then((res) => res.json());
+  const post =dadosDaAPI;
+  /*const post=dados.posts.find((currentPost)=>{
     if(currentPost.id===id){
       return true
     }
     return false;
-  })
+  })*/
 
   return{
     props:{
