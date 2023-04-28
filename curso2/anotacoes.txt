@@ -12,3 +12,7 @@ Incremental Static Generation->muitas páginas
 fallback->não existe ainda->rotas[], fallback blocking, carrega por demanda 
 
 revalidate-> revalida a cada tempo a respota da API, site com muito acesso usa isso
+
+link prefetch = true ja dá pre download, com false se passar o mouse já da download
+
+dynamicImport -> cont x = dynamic(()=> import'path'), const so vai ser carregada quando x for chamada
