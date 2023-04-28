@@ -10,3 +10,5 @@ getstaticprops: pré-carrega página antes, usar com getstaticPath para projetos
 
 Incremental Static Generation->muitas páginas
 fallback->não existe ainda->rotas[], fallback blocking, carrega por demanda 
+
+revalidate-> revalida a cada tempo a respota da API, site com muito acesso usa isso
