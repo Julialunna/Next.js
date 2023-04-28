@@ -1,2 +1,9 @@
 app-> aplica para todas as páginas -> _app.js em pages
 Document-> aplica em todos os documentos (head, html)-> _document.js
+
+Colocar na pasta posts ja cria uma rota, se o nome do doc for com [id]em volta fica dinâmico, o nome do que foi passado(url) vira um query do router
+
+a!=Link-> Link não recarrega a página de novo -> single page application
+arquivo estático acessa por link "/images/foto.png"
+next export-> para subir projeto estático
+getstaticprops: pré-carrega página antes, usar com getstaticPath para projetos estaticos
