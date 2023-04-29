@@ -3,7 +3,7 @@
 import { useRouter } from 'next/router';
 import dados from '../../dados.json';
 
-export const getServerSideProps = (context) => {
+export const getServerSideProps= (context) => {
     
     const resultado=dados.posts.filter((post)=>{
         return post.date===context.query.date

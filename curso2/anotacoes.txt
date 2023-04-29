@@ -16,3 +16,22 @@ revalidate-> revalida a cada tempo a respota da API, site com muito acesso usa i
 link prefetch = true ja dá pre download, com false se passar o mouse já da download
 
 dynamicImport -> cont x = dynamic(()=> import'path'), const so vai ser carregada quando x for chamada
+
+pasta API emm pages -> define status e respostas
+
+existe os tipos GetServerSideProps e GetStaticProps
+
+- **Static**
+    - por padrão
+    - Só vai usar o `next export` em casos onde TUDO é pré renderizado
+        - `getStaticProps`: versão com menos recursos
+
+- **Static/SSG (Static Site Generation)**:
+    - `getStaticProps`
+        - `revalidate`: true [npm run build && npm start]
+    - **Incremental Static Generation** [npm run build && npm start]
+        - fallback: true || 'blocking' e o getStaticPaths vem vazio com somente alguns itens
+        
+- **SSR(Server Side Props)**:
+    -`getServerSideProps`
+    - Se tiver dentro da pasta `/api` é uma API Route é SSR
