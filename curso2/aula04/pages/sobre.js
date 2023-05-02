@@ -8,4 +8,5 @@ function SobrePage(){
       </ul>
   </div>
 }
+ex
 export default SobrePage;
