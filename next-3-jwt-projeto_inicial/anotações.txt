@@ -1,0 +1,2 @@
+-Para pedir serviço ao back, usar fetch()
+-variáveis de ambiente: .env.local -> nesse arquivo coloca as variáveis de ambiente e chama por process.env.var
