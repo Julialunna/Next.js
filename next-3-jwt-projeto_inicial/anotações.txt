@@ -1,2 +1,12 @@
 -Para pedir serviço ao back, usar fetch()
 -variáveis de ambiente: .env.local -> nesse arquivo coloca as variáveis de ambiente e chama por process.env.var
+session.storage->guarda na janela do navegador, como ?
+save(accessToken){
+    localStorage.setItem(ACCESS_TOKEN_KEY)
+}
+globalthis? faz caso exista
+
+para salvar cookies baixar Nookies -> nookies.set(ctx, ACCESS_TOKEN_KEY, accessToken, {
+  maxAge: ONE_YEAR, 
+  path: '/'
+});
