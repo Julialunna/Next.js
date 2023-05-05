@@ -14,5 +14,4 @@ ctx vem do getServerSideProps
 
 globalThis=window+aplicação
 token.decode()-> verifica se está certo
-
-withSession()-> manda pra home já?
+ em página static usa withSessionHoc
