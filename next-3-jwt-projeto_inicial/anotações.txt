@@ -15,3 +15,18 @@ ctx vem do getServerSideProps
 globalThis=window+aplicação
 token.decode()-> verifica se está certo
  em página static usa withSessionHoc
+
+
+accessToken:
+-pegar, atualizar, inserir, deletar qualquer tipo de finformação do usuário
+-dura pouco tempo, o mínimo possível
+-se vazar, quanto maior o tempo de vida, maior o tempo de estrago que o token pode fazer
+refreshToken
+-literalmente para não precisar pedir a senha e usuáriopara gerar 
+um novo access_token
+-deração dele é longa 
+-ao nível de backend está asssociada ao usuário de alguma forma 
+- se ele vazar o usuário pode gerar tokens infinitos
+(access_token e refreshToken)
+-precisa ter alguma forma de invalidar 
+os refreshToken

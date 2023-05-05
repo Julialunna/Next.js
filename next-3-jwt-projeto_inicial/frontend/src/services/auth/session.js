@@ -33,7 +33,6 @@ export function useSession(){
     authService.getSession()
     .then((userSession)=>{
       setSession(userSession)
-      console.log(userSession)
     })
     .catch((error)=>{
       setError(error)
