@@ -10,3 +10,9 @@ para salvar cookies baixar Nookies -> nookies.set(ctx, ACCESS_TOKEN_KEY, accessT
   maxAge: ONE_YEAR, 
   path: '/'
 });
+ctx vem do getServerSideProps
+
+globalThis=window+aplicação
+token.decode()-> verifica se está certo
+
+withSession()-> manda pra home já?

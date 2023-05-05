@@ -18,12 +18,13 @@ export const tokenService = {
   }, 
   get(ctx=null){
     const cookies=nookies.get(ctx);
-    return cookies[ACCESS_TOKEN_KEY]
+    return cookies[ACCESS_TOKEN_KEY] || "";
     //return globalThis?.localStorage?.getItem(ACCESS_TOKEN_KEY);
     //return sessionStorage.getItem(ACCESS_TOKEN_KEY)
   }, 
-  delete(){
+  delete(ctx=null){
     globalThis?.localStorage?.removeItem(ACCESS_TOKEN_KEY);
     globalThis?.sessionStorage?.removeItem(ACCESS_TOKEN_KEY);
+    nookies.destroy(ctx, ACCESS_TOKEN_KEY)
   }
 }
