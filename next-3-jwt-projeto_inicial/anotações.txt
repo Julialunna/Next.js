@@ -21,7 +21,8 @@ accessToken:
 -pegar, atualizar, inserir, deletar qualquer tipo de finformação do usuário
 -dura pouco tempo, o mínimo possível
 -se vazar, quanto maior o tempo de vida, maior o tempo de estrago que o token pode fazer
-refreshToken
+
+refreshToken:
 -literalmente para não precisar pedir a senha e usuáriopara gerar 
 um novo access_token
 -deração dele é longa 

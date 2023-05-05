@@ -9,9 +9,20 @@ export const authService={
     })
     .then(async (respostaDoServidor)=>{
       if(!respostaDoServidor.ok) throw new Error("Usuário ou senha inválidos!")
-      const body =  respostaDoServidor.body
+      const body =  respostaDoServidor.body;
 
-      tokenService.save(body.data.access_token)
+      tokenService.save(body.data.access_token);
+      return body;
+    })
+    .then(({data})=>{
+      const {refresh_token}= data;
+      HttpClient("/api/refres", {
+        method:"POST", 
+        body:{
+          refresh_token
+        }
+      })
+      console.log(refresh_token);
     })
   }, 
   async getSession(ctx=null){
